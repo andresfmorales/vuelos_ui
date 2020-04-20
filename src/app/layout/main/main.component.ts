@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { VueloService } from "src/app/services/vuelo.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-main",
@@ -10,7 +11,7 @@ export class MainComponent implements OnInit {
   title = "Taller Vuelos";
   arregloVuelos: any[];
 
-  constructor(private VueloService: VueloService) {
+  constructor(private VueloService: VueloService, private router: Router) {
     this.arregloVuelos = [];
     this.getAllVuelos();
   }
@@ -21,6 +22,10 @@ export class MainComponent implements OnInit {
         this.arregloVuelos.push(tasks[i]);
       }
     });
+  }
+
+  public navegacion(path): void {
+    this.router.navigate([path]);
   }
 
   ngOnInit(): void {}

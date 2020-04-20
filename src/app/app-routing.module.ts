@@ -11,6 +11,10 @@ const routes: Routes = [
     component: MainComponent
   },
   {
+    path: "main",
+    component: MainComponent
+  },
+  {
     path: "gestionar-pasajeros",
     component: GestionarPasajerosComponent
   },
