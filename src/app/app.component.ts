@@ -7,19 +7,7 @@ import { VueloService } from "./services/vuelo.service";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  title = "Taller Vuelos";
-  arregloVuelos: any[];
+  constructor() {}
 
-  constructor(private VueloService: VueloService) {
-    this.arregloVuelos = [];
-    this.getAllVuelos();
-  }
-
-  getAllVuelos() {
-    this.VueloService.getAllVuelos().subscribe(tasks => {
-      for (let i = 0; i < tasks.length; i++) {
-        this.arregloVuelos.push(tasks[i]);
-      }
-    });
-  }
+  ngOnInit(): void {}
 }
