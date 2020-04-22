@@ -15,10 +15,6 @@ const routes: Routes = [
     component: MainComponent
   },
   {
-    path: "gestionar-pasajeros",
-    component: GestionarPasajerosComponent
-  },
-  {
     path: "listado-pasajeros/:id",
     component: ListadoPasajerosComponent
   }
