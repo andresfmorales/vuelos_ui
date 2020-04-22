@@ -19,7 +19,7 @@ const routes: Routes = [
     component: GestionarPasajerosComponent
   },
   {
-    path: "listado-pasajeros",
+    path: "listado-pasajeros/:id",
     component: ListadoPasajerosComponent
   }
 ];

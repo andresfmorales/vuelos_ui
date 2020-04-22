@@ -28,5 +28,9 @@ export class MainComponent implements OnInit {
     this.router.navigate([path]);
   }
 
+  public navegacionListPasajeros(path, id): void {
+    this.router.navigate([path + "/" + id]);
+  }
+
   ngOnInit(): void {}
 }

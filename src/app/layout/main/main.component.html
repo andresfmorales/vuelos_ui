@@ -25,8 +25,11 @@
           <th scope="col">Capacidad</th>
         </tr>
       </thead>
-      <tbody>
-        <tr *ngFor="let el of arregloVuelos">
+      <tbody *ngFor="let el of arregloVuelos">
+        <tr
+          class="let i = index"
+          (click)="navegacionListPasajeros('listado-pasajeros' , el.idVuelo )"
+        >
           <th scope="row">{{el.aelolinea}}</th>
           <td>{{el.ciudad}}</td>
           <td>{{el.fecha_llegada}}</td>
