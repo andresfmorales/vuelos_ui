@@ -1,0 +1,15 @@
+{
+  "Hello": "Hola",
+  "Create": "Crear",
+  "Update": "Actualizar",
+  "Remove": "Eliminar",
+  "Manage a passenger": "Gestionar pasajero",
+  "Passengers list": "Lista de pasajeros",
+  "Main": "Principal",
+  "Identification card": "Cedula",
+  "Name": "Nombre",
+  "Address": "Dirección",
+  "Age": "Edad",
+  "Chair number": "Numero de silla",
+  "Flight": "Vuelo"
+}

@@ -1,1 +1,44 @@
-<p>listado-pasajeros works!</p>
+<div style="text-align: center;">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Taller Vuelos</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="#">Principal</a>
+        <a class="nav-item nav-link" href="#">Lista de pasajeros</a>
+        <a class="nav-item nav-link" href="#">Gestionar pasajero</a>
+      </div>
+    </div>
+  </nav>
+
+  <h1>
+    Lista de pasajeros
+  </h1>
+
+  <div class="d-flex justify-content-center">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Silla</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let el of arregloPasajeros">
+        <tr class="let i = index" (click)="navegacion('gestionar-pasajeros')">
+          <td>{{el.nombre}}</td>
+          <td>{{el.numero_asiento}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

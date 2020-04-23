@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
-import { VueloService } from "./services/vuelo.service";
+import { VueloService } from "./services/services";
+import { TranslateService } from "@ngx-translate/core";
 
 @Component({
   selector: "app-root",
@@ -7,7 +8,11 @@ import { VueloService } from "./services/vuelo.service";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  constructor() {}
+  constructor(public translate: TranslateService) {
+    this.translate.addLangs(["es", "en"]);
+    this.translate.setDefaultLang("es");
+    this.translate.use("en");
+  }
 
   ngOnInit(): void {}
 }

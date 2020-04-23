@@ -1,10 +1,10 @@
 export interface Vuelo {
-  idVuelo: bigint;
-  pasajeros: bigint;
-  ciudad: string;
-  fecha_salida: string;
-  fecha_llegada: string;
-  aerolinea: string;
+  idVuelo: any;
+  pasajeros: any;
+  ciudad: any;
+  fecha_salida: any;
+  fecha_llegada: any;
+  aerolinea: any;
 }
 
 export interface Persona {

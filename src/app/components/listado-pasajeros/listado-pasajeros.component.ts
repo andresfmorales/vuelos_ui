@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { VueloService } from "src/app/services/vuelo.service";
+import { VueloService } from "src/app/services/services";
 import { Router, ActivatedRoute } from "@angular/router";
 
 @Component({
@@ -27,6 +27,9 @@ export class ListadoPasajerosComponent implements OnInit {
         this.arregloPasajeros.push(tasks[i]);
       }
     });
+  }
+  public navegacion(path): void {
+    this.router.navigate([path]);
   }
 
   ngOnInit(): void {}

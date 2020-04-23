@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { VueloService } from "src/app/services/vuelo.service";
+import { VueloService } from "src/app/services/services";
 import { Router } from "@angular/router";
 
 @Component({
