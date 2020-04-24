@@ -1,5 +1,4 @@
 {
-  "Hello": "Hello",
   "Create": "Create",
   "Update": "Update",
   "Remove": "Remove",
@@ -11,5 +10,20 @@
   "Address": "Address",
   "Age": "Age",
   "Chair number": "Chair number",
-  "Flight": "Flight"
+  "Flight": "Flight",
+  "Flight list": "Flight list",
+  "LandSoft seedbed": "LandSoft seedbed",
+  "Airline": "Airline",
+  "City": "City",
+  "Arrival date": "Arrival date",
+  "Departure date": "Departure date",
+  "Capacity": "Capacity",
+  "Flight ID": "Flight ID",
+  "Chair": "Chair",
+  "Enter the identification card": "Enter the identification card",
+  "Enter the name": "Enter the name",
+  "Enter the addres": "Enter the addres",
+  "Enter the age": "Enter the age",
+  "Enter the chair number": "Enter the chair number",
+  "Enter the flight ID": "Enter the flight ID"
 }

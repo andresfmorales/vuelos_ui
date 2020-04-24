@@ -1,20 +1,20 @@
 <div style="text-align: center;">
   <h1>
-    Semillero LandSoft
+    {{"LandSoft seedbed" | translate }}
   </h1>
   <h2>
-    Lista de Vuelos
+    {{"Flight list" | translate }}
   </h2>
   <div class="d-flex justify-content-center">
     <table class="table table-hover">
       <thead>
         <tr>
-          <th scope="col">Aerolinea</th>
-          <th scope="col">Ciudad</th>
-          <th scope="col">Fecha llegada</th>
-          <th scope="col">Fecha salida</th>
-          <th scope="col">Id vuelo</th>
-          <th scope="col">Capacidad</th>
+          <th scope="col">{{"Flight ID" | translate }}</th>
+          <th scope="col">{{"Airline" | translate }}</th>
+          <th scope="col">{{"City" | translate }}</th>
+          <th scope="col">{{"Arrival date" | translate }}</th>
+          <th scope="col">{{"Departure date" | translate }}</th>
+          <th scope="col">{{"Capacity" | translate }}</th>
         </tr>
       </thead>
       <tbody *ngFor="let el of arregloVuelos">
@@ -22,11 +22,11 @@
           class="let i = index"
           (click)="navegacionListPasajeros('listado-pasajeros' , el.idVuelo )"
         >
+          <td>{{el.idVuelo}}</td>
           <td>{{el.aelolinea}}</td>
           <td>{{el.ciudad}}</td>
           <td>{{el.fecha_llegada}}</td>
           <td>{{el.fecha_salida}}</td>
-          <td>{{el.idVuelo}}</td>
           <td>{{el.pasajeros}}</td>
         </tr>
       </tbody>

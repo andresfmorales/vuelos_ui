@@ -14,23 +14,26 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link" href="#">Principal</a>
-        <a class="nav-item nav-link" href="#">Lista de pasajeros</a>
-        <a class="nav-item nav-link" href="#">Gestionar pasajero</a>
+        <a class="nav-item nav-link" href="http://localhost:4200/"
+          >{{"Main" | translate }}</a
+        >
+        <a class="nav-item nav-link" href="#"
+          >{{"Manage a passenger" | translate }}</a
+        >
       </div>
     </div>
   </nav>
 
   <h1>
-    Lista de pasajeros
+    {{"Passengers list" | translate }}
   </h1>
 
   <div class="d-flex justify-content-center">
     <table class="table table-hover">
       <thead>
         <tr>
-          <th scope="col">Nombre</th>
-          <th scope="col">Silla</th>
+          <th scope="col">{{"Name" | translate }}</th>
+          <th scope="col">{{"Chair" | translate }}</th>
         </tr>
       </thead>
       <tbody *ngFor="let el of arregloPasajeros">

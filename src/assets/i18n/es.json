@@ -1,5 +1,4 @@
 {
-  "Hello": "Hola",
   "Create": "Crear",
   "Update": "Actualizar",
   "Remove": "Eliminar",
@@ -11,5 +10,20 @@
   "Address": "Dirección",
   "Age": "Edad",
   "Chair number": "Numero de silla",
-  "Flight": "Vuelo"
+  "Flight": "Vuelo",
+  "Flight list": "Lista de vuelos",
+  "LandSoft seedbed": "Semillero Landsoft",
+  "Airline": "Aerolinea",
+  "City": "Ciudad",
+  "Arrival date": "Fecha llegada",
+  "Departure date": "Fecha salida",
+  "Capacity": "Capacidad",
+  "Flight ID": "Id Vuelo",
+  "Chair": "silla",
+  "Enter the identification card": "Ingrece la cedula",
+  "Enter the name": "Ingrece el nombre",
+  "Enter the addres": "Ingrece la direccion",
+  "Enter the age": "Ingrece la edad",
+  "Enter the chair number": "Ingrece el numero de la silla",
+  "Enter the flight ID": "Ingrece el id del vuelo"
 }
