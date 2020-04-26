@@ -10,6 +10,7 @@ import { Router, ActivatedRoute } from "@angular/router";
 export class ListadoPasajerosComponent implements OnInit {
   arregloPasajeros: any[];
   id: any = "";
+  idPasajero: number;
 
   constructor(
     private VueloService: VueloService,
@@ -28,6 +29,16 @@ export class ListadoPasajerosComponent implements OnInit {
       }
     });
   }
+
+  deletePasajero(idPasajero) {
+    this.VueloService.deletePasajeroById(idPasajero).subscribe(
+      deletePersona => {
+        this.arregloPasajeros = [];
+        this.getAllPasajeros();
+      }
+    );
+  }
+
   public navegacion(path): void {
     this.router.navigate([path]);
   }

@@ -35,9 +35,14 @@
         </tr>
       </thead>
       <tbody *ngFor="let el of arregloPasajeros">
-        <tr class="let i = index" (click)="navegacion('gestionar-pasajeros')">
+        <tr class="let i = index">
           <td>
-            <a class="btn btn-primary" href="#" role="button">Eliminar</a>
+            <a
+              class="btn btn-primary"
+              (click)="deletePasajero(el.id_persona)"
+              role="button"
+              >Eliminar</a
+            >
             <a class="button_margin_list btn btn-primary" href="#" role="button"
               >Modificar</a
             >

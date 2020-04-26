@@ -14,6 +14,8 @@ export class VueloService {
 
   private apiCrearPasajero = "personas/agregar";
 
+  private apiEliminarPasajero = "personas";
+
   constructor(private http: HttpClient) {}
 
   getAllVuelos() {
@@ -34,5 +36,10 @@ export class VueloService {
   getPasajeroById(id: any) {
     const path = `${this.apiBuscarPasajero}/${id}`;
     return this.http.get<Persona>(path);
+  }
+
+  deletePasajeroById(id: any) {
+    const path = `${this.apiEliminarPasajero}/${id}`;
+    return this.http.delete<Persona>(path);
   }
 }

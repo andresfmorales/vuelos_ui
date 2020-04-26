@@ -1,6 +1,5 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
 import { VueloService } from "src/app/services/services";
-import { pipe } from "rxjs";
 
 @Component({
   selector: "app-gestionar-pasajeros",
@@ -26,11 +25,7 @@ export class GestionarPasajerosComponent implements OnInit {
       numero_asiento: this.Silla,
       vuelo_id_vuelo: this.idVuelo
     };
-    console.log("Objeto persona: ", persona);
-
-    this.VueloService.createPasajero(persona).subscribe(newPersona => {
-      console.log(newPersona);
-    });
+    this.VueloService.createPasajero(persona).subscribe(newPersona => {});
   }
 
   ngOnInit(): void {}
