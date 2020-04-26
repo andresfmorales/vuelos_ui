@@ -26,6 +26,8 @@ export class GestionarPasajerosComponent implements OnInit {
       numero_asiento: this.Silla,
       vuelo_id_vuelo: this.idVuelo
     };
+    console.log("Objeto persona: ", persona);
+
     this.VueloService.createPasajero(persona).subscribe(newPersona => {
       console.log(newPersona);
     });

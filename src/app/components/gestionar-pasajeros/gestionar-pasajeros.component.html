@@ -32,8 +32,9 @@
       </div>
       <div class="form-group col-md-6">
         <input
-          type="text"
-          ng-model="idPersona"
+          type="number"
+          [(ngModel)]="idPersona"
+          name="idPersona"
           class="form-control"
           placeholder="Ingrese la cedula"
         />
@@ -46,7 +47,8 @@
       <div class="form-group col-md-6">
         <input
           type="text"
-          ng-model="Nombre"
+          [(ngModel)]="Nombre"
+          name="Nombre"
           class="form-control"
           placeholder="Ingrese el nombre"
         />
@@ -59,7 +61,8 @@
       <div class="form-group col-md-6">
         <input
           type="text"
-          ng-model="Direccion"
+          [(ngModel)]="Direccion"
+          name="Direccion"
           class="form-control"
           placeholder="Ingrese la dirección"
         />
@@ -71,8 +74,9 @@
       </div>
       <div class="form-group col-md-6">
         <input
-          type="text"
-          ng-model="Edad"
+          type="number"
+          [(ngModel)]="Edad"
+          name="Edad"
           class="form-control"
           placeholder="Ingrese la edad"
         />
@@ -84,8 +88,9 @@
       </div>
       <div class="form-group col-md-6">
         <input
-          type="text"
-          ng-model="Silla"
+          type="number"
+          [(ngModel)]="Silla"
+          name="Silla"
           class="form-control"
           placeholder="Ingrese el numero de silla"
         />
@@ -97,8 +102,9 @@
       </div>
       <div class="form-group col-md-6">
         <input
-          type="text"
-          ng-model="idVuelo"
+          type="number"
+          [(ngModel)]="idVuelo"
+          name="idVuelo"
           class="form-control"
           placeholder="Ingrese el id del vuelo"
         />
@@ -108,6 +114,7 @@
 
   <button
     type="button"
+    (click)="createPasajero()"
     class="button_margin btn btn-dark"
     data-toggle="modal"
     data-target="#exampleModal"
