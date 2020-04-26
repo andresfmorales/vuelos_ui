@@ -133,14 +133,18 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content style_div_general_modal">
         <div class="modal-header style_div_top_modal">
-          <h5 class="modal-title" id="exampleModalLabel">!Éxito¡</h5>
+          <h5 class="modal-title" id="exampleModalLabel">
+            {{"!Success" | translate }}
+          </h5>
         </div>
         <div class="modal-body style_div_center_modal">
           <div class="mt-3 text-center">
             <span class="src\assets\img\icon-crearr.jpeg"></span>
           </div>
           <div class="mt-4 text-center">
-            <p>Se ha creado con éxito el pasajero.</p>
+            <p>
+              {{"The passenger has been created successfully." | translate }}
+            </p>
           </div>
         </div>
         <div class="modal-footer style_div_bottom_modal">
@@ -148,10 +152,10 @@
             [routerLink]="['/main']"
             routerLinkActive="router-link-active"
             type="button"
-            class="btn btn-primary"
+            class="button_margin btn btn-dark"
             data-dismiss="modal"
           >
-            Aceptar
+            {{"Accept" | translate }}
           </button>
         </div>
       </div>

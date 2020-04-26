@@ -1,1 +1,164 @@
-<p>modificar-pasajeros works!</p>
+<div style="text-align: center;">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Taller Vuelos</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="http://localhost:4200/"
+          >{{"Main" | translate }}</a
+        >
+      </div>
+    </div>
+  </nav>
+
+  <h1>
+    {{"Update passenger" | translate }}
+  </h1>
+
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputcedula">{{"Identification card" | translate }}</label>
+      </div>
+      <div class="form-group col-md-6">
+        <input
+          type="number"
+          [(ngModel)]="idPersona"
+          name="idPersona"
+          class="form-control"
+          placeholder="Ingrese la cedula"
+        />
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputnombre">{{"Name" | translate }}</label>
+      </div>
+      <div class="form-group col-md-6">
+        <input
+          type="text"
+          [(ngModel)]="Nombre"
+          name="Nombre"
+          class="form-control"
+          placeholder="Ingrese el nombre"
+        />
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputdireccion">{{"Addres" | translate }}</label>
+      </div>
+      <div class="form-group col-md-6">
+        <input
+          type="text"
+          [(ngModel)]="Direccion"
+          name="Direccion"
+          class="form-control"
+          placeholder="Ingrese la dirección"
+        />
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputedad">{{"Age" | translate }}</label>
+      </div>
+      <div class="form-group col-md-6">
+        <input
+          type="number"
+          [(ngModel)]="Edad"
+          name="Edad"
+          class="form-control"
+          placeholder="Ingrese la edad"
+        />
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputnumero_asiento">{{"Chair number" | translate }}</label>
+      </div>
+      <div class="form-group col-md-6">
+        <input
+          type="number"
+          [(ngModel)]="Silla"
+          name="Silla"
+          class="form-control"
+          placeholder="Ingrese el numero de silla"
+        />
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputVuelo_id_Vuelo">{{"Flight" | translate }}</label>
+      </div>
+      <div class="form-group col-md-6">
+        <input
+          type="number"
+          [(ngModel)]="idVuelo"
+          name="idVuelo"
+          class="form-control"
+          placeholder="Ingrese el id del vuelo"
+        />
+      </div>
+    </div>
+  </form>
+
+  <button
+    type="button"
+    (click)="modificarPasajero()"
+    class="button_margin btn btn-dark"
+    data-toggle="modal"
+    data-target="#exampleModal"
+  >
+    {{"Update" | translate }}
+  </button>
+
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content style_div_general_modal">
+        <div class="modal-header style_div_top_modal">
+          <h5 class="modal-title" id="exampleModalLabel">
+            {{"!Success" | translate }}
+          </h5>
+        </div>
+        <div class="modal-body style_div_center_modal">
+          <div class="mt-3 text-center">
+            <span class="src\assets\img\icon-crearr.jpeg"></span>
+          </div>
+          <div class="mt-4 text-center">
+            <p>
+              {{"The passenger has been updated successfully." | translate }}
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer style_div_bottom_modal">
+          <button
+            [routerLink]="['/main']"
+            routerLinkActive="router-link-active"
+            type="button"
+            class="button_margin btn btn-dark"
+            data-dismiss="modal"
+          >
+            {{"Accept" | translate }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

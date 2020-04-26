@@ -29,7 +29,7 @@
     <table class="table table-hover">
       <thead>
         <tr>
-          <th scope="col">Acciones</th>
+          <th scope="col">{{"Actions" | translate }}</th>
           <th scope="col">{{"Name" | translate }}</th>
           <th scope="col">{{"Chair" | translate }}</th>
         </tr>
@@ -41,10 +41,14 @@
               class="btn btn-primary"
               (click)="deletePasajero(el.id_persona)"
               role="button"
-              >Eliminar</a
+              >{{"Remove" | translate }}</a
             >
-            <a class="button_margin_list btn btn-primary" href="#" role="button"
-              >Modificar</a
+            <a
+              class="button_margin_list btn btn-dark"
+              [routerLink]="['/modificar-pasajeros']"
+              routerLinkActive="router-link-active"
+              role="button"
+              >{{"Update" | translate }}</a
             >
           </td>
           <td>{{el.nombre}}</td>

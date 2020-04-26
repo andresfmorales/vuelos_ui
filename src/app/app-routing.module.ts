@@ -3,6 +3,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { ListadoPasajerosComponent } from "./components/listado-pasajeros/listado-pasajeros.component";
 import { MainComponent } from "./layout/main/main.component";
 import { GestionarPasajerosComponent } from "./components/gestionar-pasajeros/gestionar-pasajeros.component";
+import { ModificarPasajerosComponent } from "./components/gestionar-pasajeros/modificar-pasajeros/modificar-pasajeros.component";
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: "gestionar-pasajeros",
     component: GestionarPasajerosComponent
+  },
+  {
+    path: "modificar-pasajeros",
+    component: ModificarPasajerosComponent
   }
 ];
 

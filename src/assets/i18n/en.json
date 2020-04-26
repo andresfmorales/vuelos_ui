@@ -25,5 +25,11 @@
   "Enter the addres": "Enter the addres",
   "Enter the age": "Enter the age",
   "Enter the chair number": "Enter the chair number",
-  "Enter the flight ID": "Enter the flight ID"
+  "Enter the flight ID": "Enter the flight ID",
+  "Actions": "Actions",
+  "The passenger has been created successfully.": "The passenger has been created successfully.",
+  "The passenger has been updated  successfully.": "The passenger has been updated successfully.",
+  "Accept": "Accept",
+  "!Success": "!Success",
+  "Update passenger": "Update passenger"
 }

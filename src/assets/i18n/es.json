@@ -25,5 +25,11 @@
   "Enter the addres": "Ingrece la direccion",
   "Enter the age": "Ingrece la edad",
   "Enter the chair number": "Ingrece el numero de la silla",
-  "Enter the flight ID": "Ingrece el id del vuelo"
+  "Enter the flight ID": "Ingrece el id del vuelo",
+  "Actions": "Actions",
+  "The passenger has been created successfully.": "El pasajero se ha creado correctamente.",
+  "The passenger has been updated  successfully.": "El pasajero se ha actualizado correctamente.",
+  "Accept": "Aceptar",
+  "!Success": "!Éxito!",
+  "Update passenger": "Actualizar pasajero"
 }
