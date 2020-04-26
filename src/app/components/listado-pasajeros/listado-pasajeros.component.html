@@ -17,9 +17,6 @@
         <a class="nav-item nav-link" href="http://localhost:4200/"
           >{{"Main" | translate }}</a
         >
-        <a class="nav-item nav-link" href="#"
-          >{{"Manage a passenger" | translate }}</a
-        >
       </div>
     </div>
   </nav>
@@ -32,16 +29,31 @@
     <table class="table table-hover">
       <thead>
         <tr>
+          <th scope="col">Acciones</th>
           <th scope="col">{{"Name" | translate }}</th>
           <th scope="col">{{"Chair" | translate }}</th>
         </tr>
       </thead>
       <tbody *ngFor="let el of arregloPasajeros">
         <tr class="let i = index" (click)="navegacion('gestionar-pasajeros')">
+          <td>
+            <a class="btn btn-primary" href="#" role="button">Eliminar</a>
+            <a class="button_margin_list btn btn-primary" href="#" role="button"
+              >Modificar</a
+            >
+          </td>
           <td>{{el.nombre}}</td>
           <td>{{el.numero_asiento}}</td>
         </tr>
       </tbody>
     </table>
   </div>
+  <button
+    [routerLink]="['/gestionar-pasajeros']"
+    routerLinkActive="router-link-active"
+    type="button"
+    class="button_margin btn btn-dark"
+  >
+    {{"Create" | translate }}
+  </button>
 </div>

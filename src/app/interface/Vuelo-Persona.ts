@@ -1,17 +1,17 @@
 export interface Vuelo {
-  idVuelo: any;
-  pasajeros: any;
-  ciudad: any;
+  idVuelo: number;
+  pasajeros: number;
+  ciudad: string;
   fecha_salida: any;
   fecha_llegada: any;
-  aerolinea: any;
+  aerolinea: string;
 }
 
 export interface Persona {
-  id_Puelo: any;
-  nombre: any;
-  direccion: any;
-  edad: any;
-  numero_asiento: any;
-  vuelo_id_vuelo: any;
+  id_persona: number;
+  nombre: string;
+  direccion: string;
+  edad: number;
+  numero_asiento: number;
+  vuelo_id_vuelo: number;
 }

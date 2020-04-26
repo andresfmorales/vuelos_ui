@@ -10,6 +10,7 @@ import { GestionarPasajerosComponent } from "./components/gestionar-pasajeros/ge
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { HttpClient } from "@angular/common/http";
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
+import { ModificarPasajerosComponent } from './components/gestionar-pasajeros/modificar-pasajeros/modificar-pasajeros.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
@@ -20,7 +21,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     ListadoPasajerosComponent,
     MainComponent,
-    GestionarPasajerosComponent
+    GestionarPasajerosComponent,
+    ModificarPasajerosComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,20 @@
+.style_div_top_modal {
+  display: flex;
+  justify-content: center;
+  border-bottom: none;
+}
+.style_div_center_modal {
+  display: flex;
+  justify-content: center;
+}
+
+.style_div_bottom_modal {
+  display: flex;
+  justify-content: center;
+  border-top: none;
+}
+
+.style_div_general_modal {
+  display: flex;
+  margin-top: 50%;
+}

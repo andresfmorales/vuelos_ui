@@ -10,6 +10,10 @@ export class VueloService {
 
   private apiListaPersonas = "personas/pasajeros";
 
+  private apiBuscarPasajero = "personas/buscarId";
+
+  private apiCrearPasajero = "personas/agregar";
+
   constructor(private http: HttpClient) {}
 
   getAllVuelos() {
@@ -20,5 +24,15 @@ export class VueloService {
   getAllPasajeros(id: any) {
     const path = `${this.apiListaPersonas}/${id}`;
     return this.http.get<Persona[]>(path);
+  }
+
+  createPasajero(task: Persona) {
+    const path = `${this.apiCrearPasajero}`;
+    return this.http.post(path, task);
+  }
+
+  getPasajeroById(id: any) {
+    const path = `${this.apiBuscarPasajero}/${id}`;
+    return this.http.get<Persona>(path);
   }
 }
