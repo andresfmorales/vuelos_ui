@@ -30,6 +30,7 @@
       <thead>
         <tr>
           <th scope="col">{{"Actions" | translate }}</th>
+          <th scope="col">{{"Identification card" | translate }}</th>
           <th scope="col">{{"Name" | translate }}</th>
           <th scope="col">{{"Chair" | translate }}</th>
         </tr>
@@ -44,13 +45,13 @@
               >{{"Remove" | translate }}</a
             >
             <a
-              class="button_margin_list btn btn-dark"
-              [routerLink]="['/modificar-pasajeros']"
-              routerLinkActive="router-link-active"
+              class="button_margin_list btn btn-primary"
+              (click)="navegacionModificar('modificar-pasajeros' , el.id_persona , el.nombre , el.direccion, el.edad, el.numero_asiento, el.vuelo_id_vuelo )"
               role="button"
               >{{"Update" | translate }}</a
             >
           </td>
+          <td>{{el.id_persona}}</td>
           <td>{{el.nombre}}</td>
           <td>{{el.numero_asiento}}</td>
         </tr>
@@ -64,5 +65,13 @@
     class="button_margin btn btn-dark"
   >
     {{"Create" | translate }}
+  </button>
+  <button
+    [routerLink]="['/main']"
+    routerLinkActive="router-link-active"
+    type="button"
+    class="button_margin_list btn btn-dark"
+  >
+    {{"Main" | translate }}
   </button>
 </div>

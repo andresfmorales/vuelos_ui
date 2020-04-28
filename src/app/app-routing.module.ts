@@ -23,7 +23,8 @@ const routes: Routes = [
     component: GestionarPasajerosComponent
   },
   {
-    path: "modificar-pasajeros",
+    path:
+      "modificar-pasajeros/:id/:nombre/:direccion/:edad/:numero_asiento/:vuelo_id",
     component: ModificarPasajerosComponent
   }
 ];

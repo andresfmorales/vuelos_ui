@@ -43,5 +43,31 @@ export class ListadoPasajerosComponent implements OnInit {
     this.router.navigate([path]);
   }
 
+  public navegacionModificar(
+    path,
+    id,
+    nombre,
+    direccion,
+    edad,
+    numero_asiento,
+    vuelo_id
+  ): void {
+    this.router.navigate([
+      path +
+        "/" +
+        id +
+        "/" +
+        nombre +
+        "/" +
+        direccion +
+        "/" +
+        edad +
+        "/" +
+        numero_asiento +
+        "/" +
+        vuelo_id
+    ]);
+  }
+
   ngOnInit(): void {}
 }

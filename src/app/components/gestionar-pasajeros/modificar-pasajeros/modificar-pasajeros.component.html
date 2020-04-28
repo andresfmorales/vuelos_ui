@@ -33,6 +33,7 @@
       <div class="form-group col-md-6">
         <input
           type="number"
+          disabled
           [(ngModel)]="idPersona"
           name="idPersona"
           class="form-control"
@@ -50,7 +51,7 @@
           [(ngModel)]="Nombre"
           name="Nombre"
           class="form-control"
-          placeholder="Ingrese el nombre"
+          placeholder="Ingrese el nombre completo"
         />
       </div>
     </div>
@@ -121,6 +122,14 @@
   >
     {{"Update" | translate }}
   </button>
+  <button
+    [routerLink]="['/main']"
+    routerLinkActive="router-link-active"
+    type="button"
+    class="button_margin_list btn btn-dark"
+  >
+    {{"Main" | translate }}
+  </button>
 
   <div
     class="modal fade"
@@ -138,9 +147,7 @@
           </h5>
         </div>
         <div class="modal-body style_div_center_modal">
-          <div class="mt-3 text-center">
-            <span class="src\assets\img\icon-crearr.jpeg"></span>
-          </div>
+          <div class="mt-3 text-center"></div>
           <div class="mt-4 text-center">
             <p>
               {{"The passenger has been updated successfully." | translate }}

@@ -14,6 +14,8 @@ export class VueloService {
 
   private apiCrearPasajero = "personas/agregar";
 
+  private apiActualizarPasajero = "personas/modificar";
+
   private apiEliminarPasajero = "personas";
 
   constructor(private http: HttpClient) {}
@@ -31,6 +33,11 @@ export class VueloService {
   createPasajero(task: Persona) {
     const path = `${this.apiCrearPasajero}`;
     return this.http.post(path, task);
+  }
+
+  updatePasajero(task: Persona) {
+    const path = `${this.apiActualizarPasajero}`;
+    return this.http.put(path, task);
   }
 
   getPasajeroById(id: any) {
