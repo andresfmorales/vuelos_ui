@@ -5,7 +5,7 @@
   "Manage a passenger": "Gestionar pasajero",
   "Passengers list": "Lista de pasajeros",
   "Main": "Principal",
-  "Identification card": "Cedula",
+  "Identification card": "Cédula",
   "Name": "Nombre",
   "Address": "Dirección",
   "Age": "Edad",
@@ -19,7 +19,7 @@
   "Departure date": "Fecha salida",
   "Capacity": "Capacidad",
   "Flight ID": "Id Vuelo",
-  "Chair": "silla",
+  "Chair": "Silla",
   "Enter the identification card": "Ingrece la cedula",
   "Enter the name": "Ingrece el nombre",
   "Enter the addres": "Ingrece la direccion",
@@ -31,5 +31,6 @@
   "The passenger has been updated successfully.": "El pasajero se ha actualizado correctamente.",
   "Accept": "Aceptar",
   "!Success": "!Éxito!",
-  "Update passenger": "Actualizar pasajero"
+  "Update passenger": "Actualizar pasajero",
+  "Flight Workshop": "Taller Vuelos"
 }

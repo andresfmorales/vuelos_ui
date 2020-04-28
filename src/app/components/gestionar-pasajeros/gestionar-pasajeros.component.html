@@ -1,6 +1,6 @@
 <div style="text-align: center;">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Taller Vuelos</a>
+    <a class="navbar-brand" href="#">{{"Flight Workshop" | translate }}</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -56,7 +56,7 @@
     </div>
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label for="inputdireccion">{{"Addres" | translate }}</label>
+        <label for="inputdireccion">{{"Address" | translate }}</label>
       </div>
       <div class="form-group col-md-6">
         <input
@@ -120,6 +120,14 @@
     data-target="#exampleModal"
   >
     {{"Create" | translate }}
+  </button>
+  <button
+    [routerLink]="['/main']"
+    routerLinkActive="router-link-active"
+    type="button"
+    class="button_margin_list btn btn-dark"
+  >
+    {{"Main" | translate }}
   </button>
 
   <div
